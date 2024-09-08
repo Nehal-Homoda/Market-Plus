@@ -1,0 +1,105 @@
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%)
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%)
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%)
+    }
+}
+
+
+@keyframes customLoadingBar {
+    from {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+@keyframes shake {
+    from {
+        transform: translateX(-10px) scale(0.95) rotate(20deg)
+    }
+
+    to {
+        transform: translateX(10px) scale(1) rotate(-20deg)
+    }
+}
+
+/*==| FADE |==*/
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 300ms ease-in-out;
+}
+
+/*==| SLIDE LEFT |==*/
+.slideLeft-enter-from,
+.slideLeft-leave-to {
+    transform: translateX(-100%)
+}
+
+.slideLeft-enter-active,
+.slideLeft-leave-active {
+    transition: all 300ms ease-in-out;
+}
+
+/*==| SLIDE RIGHT |==*/
+.slideRight-enter-from,
+.slideRight-leave-to {
+    transform: translateX(100%)
+}
+
+.slideRight-enter-active,
+.slideRight-leave-active {
+    transition: all 300ms ease-in-out;
+}
+
+/*==| SLIDE UP |==*/
+.slideUp-enter-from,
+.slideUp-leave-to {
+    transform: translateY(100%)
+}
+
+.slideUp-enter-active,
+.slideUp-leave-active {
+    transition: all 300ms ease-in-out;
+}
+
+/*==| SLIDE DOWN |==*/
+.slideDown-enter-from,
+.slideDown-leave-to {
+    transform: translateY(-100%)
+}
+
+.slideDown-enter-active,
+.slideDown-leave-active {
+    transition: all 300ms ease-in-out;
+}
